@@ -15,7 +15,7 @@ public class Main {
                 i++;
             } else {
                 i = menu.saveOrEdit();
-                if (i < 5) memento.edit(i);
+                if (i < 6) memento.edit(i);
             }
         }
     }
