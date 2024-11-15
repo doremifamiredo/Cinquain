@@ -60,17 +60,6 @@ pipeline {
                 }
             }
         }
-        stage('Configure Jenkins (Optional)') {
-            steps {
-                script {
-                    // Дополнительная настройка Jenkins через Groovy скрипты или REST API
-                    sh '''
-                    # Пример скрипта для выполнения первичной настройки Jenkins
-                    curl -X POST http://localhost:${JENKINS_PORT}/scriptText --data-urlencode 'script=println("Jenkins is running!")'
-                    '''
-                }
-            }
-        }
     }
 
     post {
